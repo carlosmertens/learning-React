@@ -7,7 +7,7 @@ function Card(props) {
     <div className="col s2">
       <div className="card hoverable large">
         <div className="card-image">
-          <img src="http://lorempixel.com/400/400/nature/" />
+          <img src={props.image} />
         </div>
         <div className="card-content">
           <p>"{title}"</p>
