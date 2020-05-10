@@ -1,25 +1,13 @@
+// Map through the data and return React elements
+let cards = data.map((course, index) => {
+  return <Card key={index} data={course} />;
+});
+
+// Test that cards holds an array of React elements with own keys
+console.log(cards);
+
+// Render with ReactDOM the App
 ReactDOM.render(
-  <div className="row">
-    <Card
-      name={data[0].instructor}
-      title={data[0].course}
-      image={data[0].image}
-    />
-    <Card
-      name={data[1].instructor}
-      title={data[1].course}
-      image={data[1].image}
-    />
-    <Card
-      name={data[2].instructor}
-      title={data[2].course}
-      image={data[2].image}
-    />
-    <Card
-      name={data[3].instructor}
-      title={data[3].course}
-      image={data[3].image}
-    />
-  </div>,
+  <div className="row">{cards}</div>,
   document.getElementById("root")
 );
