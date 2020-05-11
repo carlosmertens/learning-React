@@ -1,4 +1,4 @@
-const data = [
+const cardData = [
   {
     course: "Conversion Tracking for Digital Marketing",
     instructor: "Mark Meyerson",

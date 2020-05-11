@@ -11,7 +11,7 @@ class CatNav extends React.Component {
   render() {
     console.log(this.props);
 
-    let navTabs = this.props.navData.map((tab, index) => {
+    const navTabs = this.props.navData.map((tab, index) => {
       return (
         <li key={index} className="cat-link left valign-wrapper">
           <i className="material-icons">{tab.icon}</i>
