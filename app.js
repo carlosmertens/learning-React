@@ -12,7 +12,13 @@ ReactDOM.render(
     <div>
       <CatNav navData={navData} />
     </div>
-    <div className="row">{cards}</div>
+    <div className="container row">{cards}</div>
+    <div className="container cities">
+      <CitiesContainer citiesData={citiesData} />
+    </div>
+    <div className="container cities">
+      <CitiesContainer citiesData={citiesData2} />
+    </div>
   </div>,
   document.getElementById("root")
 );
